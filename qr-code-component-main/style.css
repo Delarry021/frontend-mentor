@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-@media only screen and (max-width: 1440px) {
     body {
         font-family: 'Outfit', sans-serif;
         font-size: 15px;
@@ -44,7 +43,6 @@
         width: 50vh;
         border-radius: 10px;
     }
-}
 
 @media only screen and (max-width: 500px) {
 
