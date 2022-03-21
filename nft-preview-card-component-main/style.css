@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.conteudo {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+
+    margin: 100px auto;
+    padding: 5vh;
+
+    border-radius: 10px;
+    box-shadow: 0 30px 0 15px hsla(219, 77%, 5%, 0.363);
+
+    width: 300px;
+    height: 560px;
+
+    align-items: center;
+    box-shadow: 0 30px 0 15px hsla(219, 77%, 5%, 0.363);
+}
+
+.nft {
+    height: 300px;
+    border-radius: 10px;
+}
+
+.nftoverlay {
+    opacity: 0%;
+    transition-duration: 200ms;
+    background-color: rgba(0, 255, 255, 0.521);
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.nftoverlay img {
+    position: absolute;
+    height: 50px;
+    top: 125px;
+    left: 125px;
+}
+
+.container h1 {
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container p {
+    white-space: nowrap;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    line-height: 25px;
+}
+
+.figure {
+    white-space: nowrap;
+    display: inline-flex;
+    font-size: 16px;
+}
+
+.figure img {
+    height: 20px;
+    align-self: center;
+}
+
+#valor {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    margin-left:5px;
+}
+
+#tempo {
+    position: relative;
+    left: 110px;
+}
+
+hr {
+    width: 100%;
+    border-top: 0;
+    border-color: hsl(215, 32%, 27%);
+}
+
+.creator {
+    display: inline-flex;
+    align-items: center;
+}
+
+.creator img {
+    height: 32px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1.8px;
+    border-radius: 100%;
+}
+
+.creator p {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.creator span {
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.attribution {
+    position: relative;
+    text-align: center;
+    top: 105px;
+}
+
+/* HOVERS */
+
+.nftoverlay:hover {
+    opacity: 100;
+}
+
+.container h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.creator span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 375px) {
+    .conteudo{
+        margin: 50px auto;
+        width: 240px;
+        height: 560px;
+        padding: 3vh 7vh;
+        box-shadow: none;
+    }
+
+    .attribution {
+        top: 5%;
+    }
+}
