@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    background-color: white;
+    box-shadow: 5px 15px 15px hsla(245, 75%, 52%, 0.199);
+    max-width: min-content;
+    border-radius: 15px;
+
+    margin: 15vh auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.imagem img{
+    border-radius: 15px 15px 0 0;
+    max-width: 100%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.conteudo p{
+    padding-top: 20px;
+    width: 80%;
+    position: relative;
+    left: 0rem;
+    word-wrap: break-word;
+}
+
+.container p {
+    color: hsl(224, 23%, 55%);
+}
+
+.plano {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 15px;
+    width: 25rem;
+    padding: 25px;
+    margin: 0 25px;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.plano h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.plano a {
+    position: relative;
+    left: 7.5rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.plano a:hover {
+    text-decoration: none;
+    color: hsl(245, 62%, 63%);
+}
+
+.tipo-plano {
+    line-height: 25px;
+}
+
+.pagamento {
+    width: 25rem;
+    margin: 0 25px;
+    margin: 0.5em  auto 2em auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pagar {
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 5px 15px 15px hsla(245, 75%, 52%, 0.199);
+}
+
+#pagar:hover {
+    background-color: hsl(245, 62%, 63%);
+}
+
+#cancelar {
+    cursor: pointer;
+    border-style: none;
+    background: none;
+    padding: 15px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+#cancelar:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 800px) {
+
+    *{
+        font-size: 14px;
+    }
+
+    .container {
+        margin: 10vh 5vh;
+    }
+
+    .conteudo h1 {
+        font-size: 22px;
+    }
+
+    .conteudo p {
+        width: 95%;
+    }
+
+    .plano {
+        width: 85%;
+    }
+
+    .plano img,h1,p {
+        position: relative;
+        right: 1rem;
+    }
+
+    .plano a {
+        left: 0;
+    }
+
+    .pagamento {
+        width: 85%;
+    }
+
+}
