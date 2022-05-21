@@ -43,6 +43,8 @@ body {
 }
 
 .conteudo h1 {
+    position: relative;
+    left: 0;
     font-size: 30px;
     font-weight: 900;
     color: hsl(223, 47%, 23%);
@@ -140,7 +142,7 @@ body {
     }
 
     .container {
-        margin: 10vh 5vh;
+        margin: 10vh auto;
     }
 
     .conteudo h1 {
@@ -148,7 +150,7 @@ body {
     }
 
     .conteudo p {
-        width: 95%;
+        width: 75%;
     }
 
     .plano {
@@ -161,7 +163,7 @@ body {
     }
 
     .plano a {
-        left: 0;
+        left: 1rem;
     }
 
     .pagamento {
