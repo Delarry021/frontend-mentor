@@ -1,73 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body {
         font-family: 'Outfit', sans-serif;
-        font-size: 15px;
-    
-        background-color: hsl(0, 0%, 100%);
-    }
-    
-    .context {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
         background-color: hsl(212, 45%, 89%);
-        margin: 20vh 10vh;
-        padding: 30px;
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.068);
     }
-    
-    .qrCode {
 
-        margin: 0vh 74vh;
-        padding: 20px;
-        background-color: hsl(0, 0%, 100%);
-        border-radius: 20px;
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.068);
+    p {
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
     }
-    
-    .qrCode h1 {
+
+    .context {
+        padding: 1rem 1rem 2rem 1rem;
+        margin: 15vh auto;
+        border-radius: 20px;
+        width: fit-content;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .context h1 {
+        margin-top: 1rem;
         font-weight: 700;
         font-size: 22px;
-        color: hsl(0, 0%, 0%);
-        line-height: 4vh;
+        line-height: 1.5rem;
     }
-    
-    .qrCode p {
-        color: hsl(220, 15%, 55%);
-        line-height: 3vh;
+
+    .context p {
+        margin-top: 1rem;
+        line-height: 1rem;
     }
-    
+
     .qr {
-        width: 50vh;
+        width: 20rem;
         border-radius: 10px;
     }
 
-@media only screen and (max-width: 500px) {
-
-    body {
-        background-color: hsl(212, 45%, 89%);
+    .attribution {
+        text-align: center;
     }
 
-    .context {
-        box-shadow: 0 0 0 0;
-    }
+    @media (max-width: 600px){
 
-}
+        .context {
+            margin: 13vh auto;
+        }
 
-@media only screen and (max-width: 375px) {
-    body {
-        background-color: hsl(212, 45%, 89%);
+        .qr {
+            width: 18rem;
+        }
     }
-
-    .qrCode {
-        margin: -10vh 0;
-        width: 40vh;
-        padding-bottom: 5vh;
-    }
-
-    .qr {
-        width: 40vh;
-    }
-}
